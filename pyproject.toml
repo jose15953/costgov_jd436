@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jose15953-costgov_jd436"
+version = "0.1.0"
+description = "在同一个输入里两两比对，检测成本与容量治理专家·投机解码的命中率相关的矛盾表述，把冲突双方原样并排呈现"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "jose15953" }]
+keywords = ["ai", "llm", "cli", "analysis"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://jose15953.github.io"
+Repository = "https://github.com/jose15953/costgov_jd436"
+Issues = "https://github.com/jose15953/costgov_jd436/issues"
+
+[project.scripts]
+costgov_jd436 = "costgov_jd436:main"
+
+[tool.setuptools]
+py-modules = ["costgov_jd436"]
